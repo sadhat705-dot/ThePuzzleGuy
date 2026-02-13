@@ -4,7 +4,7 @@ sprite_open = spr_door_open;
 sprite_index = sprite_closed;
 solid = true;
 
-rm_next = rm_level5
+rm_next = rm_level3
 fade = 1;              // começa preto
 fade_speed = 0.05;
 go_next = false;

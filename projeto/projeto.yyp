@@ -37,6 +37,7 @@
   "name":"projeto",
   "resources":[
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
+    {"id":{"name":"obj_anvil","path":"objects/obj_anvil/obj_anvil.yy",},},
     {"id":{"name":"obj_barrel_spawner","path":"objects/obj_barrel_spawner/obj_barrel_spawner.yy",},},
     {"id":{"name":"obj_barrel","path":"objects/obj_barrel/obj_barrel.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
@@ -71,6 +72,7 @@
     {"id":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
     {"id":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
     {"id":{"name":"rm_level4","path":"rooms/rm_level4/rm_level4.yy",},},
+    {"id":{"name":"rm_level5","path":"rooms/rm_level5/rm_level5.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"Blip3","path":"sounds/Blip3/Blip3.yy",},},
     {"id":{"name":"Blip4","path":"sounds/Blip4/Blip4.yy",},},
@@ -83,6 +85,7 @@
     {"id":{"name":"seta_left","path":"sprites/seta_left/seta_left.yy",},},
     {"id":{"name":"seta_right","path":"sprites/seta_right/seta_right.yy",},},
     {"id":{"name":"spr_A","path":"sprites/spr_A/spr_A.yy",},},
+    {"id":{"name":"spr_anvil","path":"sprites/spr_anvil/spr_anvil.yy",},},
     {"id":{"name":"spr_B","path":"sprites/spr_B/spr_B.yy",},},
     {"id":{"name":"spr_barras1","path":"sprites/spr_barras1/spr_barras1.yy",},},
     {"id":{"name":"spr_barras2","path":"sprites/spr_barras2/spr_barras2.yy",},},
@@ -174,6 +177,7 @@
     {"roomId":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
     {"roomId":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},},
     {"roomId":{"name":"rm_level4","path":"rooms/rm_level4/rm_level4.yy",},},
+    {"roomId":{"name":"rm_level5","path":"rooms/rm_level5/rm_level5.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
