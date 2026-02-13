@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ground_break",
-  "eventList":[],
+  "%Name":"obj_jump",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_ground_break",
+  "name":"obj_jump",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Spr_chao",
-    "path":"sprites/Spr_chao/Spr_chao.yy",
+    "name":"spr_die",
+    "path":"sprites/spr_die/spr_die.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

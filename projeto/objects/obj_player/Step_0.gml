@@ -11,11 +11,14 @@ if (can_move)
 	// PULO (chão OU plataforma)
 	if (place_meeting(x, y + 1, obj_ground) || place_meeting(x, y + 1, obj_moving_platform) || place_meeting(x, y + 1, obj_moving_platform_2))
 	{
-		if (keyboard_check_pressed(vk_space))
-		{
-			vsp = jump;
-			audio_play_sound(Pular, 1, false);
-		}
+		jump_pressed = keyboard_check_pressed(vk_space);
+
+if (jump_pressed)
+{
+    vsp = jump;
+    audio_play_sound(Pular, 1, false);
+}
+
 	}
 }
 else

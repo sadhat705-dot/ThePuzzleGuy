@@ -32,6 +32,22 @@ if (instance_exists(obj_button))
 	}
 }
 
+// porta abre / fecha
+if (instance_exists(obj_button_pyr))
+{
+	if (obj_button_pyr.pressed)
+	{
+		sprite_index = sprite_open;
+		solid = false;
+	}
+	else
+	{
+		sprite_index = sprite_closed;
+		solid = true;
+	}
+}
+
+
 // FADE IN AO COMEÇAR A FASE
 if (fading_in)
 {

@@ -34,3 +34,5 @@ if (variable_global_exists("load_x"))
     y = global.load_y;
 }
 
+was_jumping = false;
+jump_pressed = false;
