@@ -1,2 +1,0 @@
-is_pressed = false;
-
