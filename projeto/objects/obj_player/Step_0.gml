@@ -86,14 +86,22 @@ y += vsp;
 // ===============================
 // SPRITES
 // ===============================
+// PLAYER ANDANDO?
 if (h != 0)
 {
-	sprite_index = spr_player_walk;
 	image_xscale = sign(h);
+
+	if (room == rm_level6)
+		sprite_index = spr_player_walk_red;
+	else
+		sprite_index = spr_player_walk;
 }
 else
 {
-	sprite_index = spr_player_idle;
+	if (room == rm_level6 )
+		sprite_index = spr_player_idle_red;
+	else
+		sprite_index = spr_player_idle;
 }
 
 // ===============================

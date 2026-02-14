@@ -45,7 +45,7 @@ if (!activated && jump_count >= 3)
     // porta desce
     with (obj_door)
     {
-        y += 10 * 32;
+        y += 11 * 32;
     }
 
     // botão anda direita

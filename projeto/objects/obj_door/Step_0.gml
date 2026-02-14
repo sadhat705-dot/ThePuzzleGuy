@@ -1,10 +1,12 @@
+// ===============================
+// ALAVANCAS (todas precisam estar ativas)
+// ===============================
 var all_active = true;
 
 with (obj_lever)
 {
 	if (!active) all_active = false;
 }
-
 
 if (all_active && instance_number(obj_lever) > 0)
 {
@@ -17,22 +19,29 @@ else
 	solid = true;
 }
 
-// porta abre / fecha
-if (instance_exists(obj_button))
+// ===============================
+// BOTÃO NORMAL (NÃO FUNCIONA NO LEVEL6)
+// ===============================
+if (room != rm_level6)
 {
-	if (obj_button.is_pressed)
+	if (instance_exists(obj_button))
 	{
-		sprite_index = sprite_open;
-		solid = false;
-	}
-	else
-	{
-		sprite_index = sprite_closed;
-		solid = true;
+		if (obj_button.is_pressed)
+		{
+			sprite_index = sprite_open;
+			solid = false;
+		}
+		else
+		{
+			sprite_index = sprite_closed;
+			solid = true;
+		}
 	}
 }
 
-// porta abre / fecha
+// ===============================
+// BOTÃO PYR (FUNCIONA EM QUALQUER FASE)
+// ===============================
 if (instance_exists(obj_button_pyr))
 {
 	if (obj_button_pyr.pressed)
@@ -47,8 +56,9 @@ if (instance_exists(obj_button_pyr))
 	}
 }
 
-
-// FADE IN AO COMEÇAR A FASE
+// ===============================
+// FADE IN AO ENTRAR NA ROOM
+// ===============================
 if (fading_in)
 {
 	fade -= fade_speed;
@@ -60,13 +70,17 @@ if (fading_in)
 	}
 }
 
-// PLAYER ENTROU NA PORTA → FADE OUT
+// ===============================
+// PLAYER ENTROU NA PORTA
+// ===============================
 if (!solid && place_meeting(x, y, obj_player) && !go_next)
 {
 	go_next = true;
 }
 
+// ===============================
 // FADE OUT
+// ===============================
 if (go_next)
 {
 	fade += fade_speed;
@@ -76,5 +90,3 @@ if (go_next)
 		room_goto(rm_next);
 	}
 }
-
-
