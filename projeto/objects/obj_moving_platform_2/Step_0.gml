@@ -4,7 +4,7 @@ if (active)
 }
 else
 {
-	target_x = start_x;
+	target_x = start_x
 }
 
 if (abs(x - target_x) > speed)
@@ -15,3 +15,4 @@ else
 {
 	x = target_x;
 }
+

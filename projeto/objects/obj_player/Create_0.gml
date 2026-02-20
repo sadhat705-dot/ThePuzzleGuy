@@ -36,3 +36,4 @@ if (variable_global_exists("load_x"))
 
 was_jumping = false;
 jump_pressed = false;
+global.dark_mode = false;

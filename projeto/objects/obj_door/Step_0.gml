@@ -1,92 +1,105 @@
 // ===============================
-// ALAVANCAS (todas precisam estar ativas)
+// SISTEMA DE ALAVANCAS (contagem)
 // ===============================
-var all_active = true;
 
+var lever_total  = instance_number(obj_lever);
+var lever_on = 0;
+
+// conta quantas estão ligadas
 with (obj_lever)
 {
-	if (!active) all_active = false;
+    if (active) lever_on++;
 }
 
-if (all_active && instance_number(obj_lever) > 0)
+// adiciona inimigos ativados
+with (obj_leverrover)
 {
-	sprite_index = sprite_open;
-	solid = false;
+    lever_total += 1; // incrementa total
+    if (activated) lever_on++;
+}
+
+// se existir alavanca → TODAS precisam estar ligadas
+if (lever_total > 0)
+{
+    door_open = (lever_on == lever_total);
+}
+
+
+// se existir alavanca → TODAS precisam estar ligadas
+if (lever_total > 0)
+{
+    door_open = (lever_on == lever_total);
 }
 else
 {
-	sprite_index = sprite_closed;
-	solid = true;
+    // ===============================
+    // BOTÕES (só se NÃO tiver alavanca)
+    // ===============================
+
+    door_open = false;
+
+    if (instance_exists(obj_button))
+    {
+        if (obj_button.is_pressed)
+            door_open = true;
+    }
+
+    if (instance_exists(obj_button_pyr))
+    {
+        if (obj_button_pyr.pressed)
+            door_open = true;
+    }
 }
 
 // ===============================
-// BOTÃO NORMAL (NÃO FUNCIONA NO LEVEL6)
+// VISUAL + COLISÃO
 // ===============================
-if (room != rm_level6)
+
+if (door_open)
 {
-	if (instance_exists(obj_button))
-	{
-		if (obj_button.is_pressed)
-		{
-			sprite_index = sprite_open;
-			solid = false;
-		}
-		else
-		{
-			sprite_index = sprite_closed;
-			solid = true;
-		}
-	}
+    sprite_index = sprite_open;
+    solid = false;
 }
-
-// ===============================
-// BOTÃO PYR (FUNCIONA EM QUALQUER FASE)
-// ===============================
-if (instance_exists(obj_button_pyr))
+else
 {
-	if (obj_button_pyr.pressed)
-	{
-		sprite_index = sprite_open;
-		solid = false;
-	}
-	else
-	{
-		sprite_index = sprite_closed;
-		solid = true;
-	}
+    sprite_index = sprite_closed;
+    solid = true;
 }
 
 // ===============================
-// FADE IN AO ENTRAR NA ROOM
+// PLAYER NA PORTA
 // ===============================
+
+if (door_open && place_meeting(x, y, obj_player) && !go_next)
+{
+    go_next = true;
+}
+
+// ===============================
+// FADE IN
+// ===============================
+
 if (fading_in)
 {
-	fade -= fade_speed;
+    fade -= fade_speed;
 
-	if (fade <= 0)
-	{
-		fade = 0;
-		fading_in = false;
-	}
-}
-
-// ===============================
-// PLAYER ENTROU NA PORTA
-// ===============================
-if (!solid && place_meeting(x, y, obj_player) && !go_next)
-{
-	go_next = true;
+    if (fade <= 0)
+    {
+        fade = 0;
+        fading_in = false;
+    }
 }
 
 // ===============================
 // FADE OUT
 // ===============================
+
 if (go_next)
 {
-	fade += fade_speed;
+    fade += fade_speed;
 
-	if (fade >= 1)
-	{
-		room_goto(rm_next);
-	}
+    if (fade >= 1)
+    {
+        room_goto(rm_next);
+    }
 }

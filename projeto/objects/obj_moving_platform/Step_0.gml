@@ -15,3 +15,9 @@ else
 {
 	x = target_x;
 }
+if (room == rm_level8) {
+	sprite_index = spr_ground_4_purple
+}else 
+{
+	sprite_index = spr_ground_4
+}

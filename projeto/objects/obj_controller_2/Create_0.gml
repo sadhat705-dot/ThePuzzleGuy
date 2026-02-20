@@ -9,3 +9,4 @@ tile_w = 32;
 tile_h = 32;
 
 timer = 0;
+audio_stop_sound(Level_1)

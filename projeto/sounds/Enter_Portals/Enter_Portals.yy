@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Enter_Portals",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.0710204,
+  "name":"Enter_Portals",
+  "parent":{
+    "name":"Sons",
+    "path":"folders/Sons.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Enter_Portals.mp3",
+  "type":0,
+  "volume":1.0,
+}

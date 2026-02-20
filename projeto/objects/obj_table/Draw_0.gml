@@ -1,4 +1,4 @@
-draw_self();
+draw_self()
 
 if (alpha > 0.01)
 {
