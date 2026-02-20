@@ -100,6 +100,7 @@
     {"id":{"name":"rm_level8","path":"rooms/rm_level8/rm_level8.yy",},},
     {"id":{"name":"rm_level9","path":"rooms/rm_level9/rm_level9.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"id":{"name":"rm_secret","path":"rooms/rm_secret/rm_secret.yy",},},
     {"id":{"name":"Blip3","path":"sounds/Blip3/Blip3.yy",},},
     {"id":{"name":"Blip4","path":"sounds/Blip4/Blip4.yy",},},
     {"id":{"name":"Enter_Portals","path":"sounds/Enter_Portals/Enter_Portals.yy",},},
@@ -248,6 +249,7 @@
     {"roomId":{"name":"rm_level12","path":"rooms/rm_level12/rm_level12.yy",},},
     {"roomId":{"name":"rm_level13","path":"rooms/rm_level13/rm_level13.yy",},},
     {"roomId":{"name":"rm_level14","path":"rooms/rm_level14/rm_level14.yy",},},
+    {"roomId":{"name":"rm_secret","path":"rooms/rm_secret/rm_secret.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
