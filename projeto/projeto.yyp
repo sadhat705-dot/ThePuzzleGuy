@@ -103,6 +103,7 @@
     {"id":{"name":"rm_secret","path":"rooms/rm_secret/rm_secret.yy",},},
     {"id":{"name":"Blip3","path":"sounds/Blip3/Blip3.yy",},},
     {"id":{"name":"Blip4","path":"sounds/Blip4/Blip4.yy",},},
+    {"id":{"name":"Bunny_s_Signature","path":"sounds/Bunny_s_Signature/Bunny_s_Signature.yy",},},
     {"id":{"name":"Enter_Portals","path":"sounds/Enter_Portals/Enter_Portals.yy",},},
     {"id":{"name":"Jump2","path":"sounds/Jump2/Jump2.yy",},},
     {"id":{"name":"Level_1","path":"sounds/Level_1/Level_1.yy",},},

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Bunny_s_Signature",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":17.057959,
+  "name":"Bunny_s_Signature",
+  "parent":{
+    "name":"Cenas",
+    "path":"folders/Cenas.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Bunny_s_Signature.mp3",
+  "type":0,
+  "volume":1.0,
+}
